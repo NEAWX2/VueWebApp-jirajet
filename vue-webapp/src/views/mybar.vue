@@ -1,83 +1,101 @@
 <!--ส่วนสำหรับการแสดงผล-->
 <template>
-    <div class="nav-links">
-        <ul>
-            <li><a href="#home">home</a></li>
-            <li><a href="#myapp">My app</a></li>
-            <li><a href="about">About</a></li>
-        </ul>
-    </div>
+  <nav class="navbar">
+      <div class="wrapper">
+          <router-link to="/" >
+              <img src="@/assets/logo.png" alt="App Logo" />
+          </router-link>>
+              <div>
+                  <ul class="nav-links">
+                      <li><router-link to="/">Home</router-link></li>
+                      <li><router-link to="/product">My card</router-link></li>
+                      <li><router-link to="/about">About</router-link></li>
+                  </ul>
 
-</template>
+              </div>
+      </div>
+  </nav>
+</template>          
+        
 <!--สำหรับเขียน Java script เพื่อควบคุมการทำงานของ component เข่น การกำหนด data methode เป็นต้น-->
 <script>
+  import logo from "@/assets/logo.png";
 export default {
-}
+    name: "mybar",
+   data() {
+    return{
+      logo,
+    }
+   },
+};
 </script>
 <!--ส่วนสำหรับเขียน css เพื่อตกแต่ง template-->
-<style>
-body{
-  height: 100vh;
-  display: left;
-  align-items: flex;
-  justify-content: center;
-  background: #0deebd;
+<style scoped>
+/* Navbar Styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap&quot");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
-.nav-links{
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0px 0px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+ 
+.wrapper {
+  position: relative;
+  max-width: 1300px;
+  height: 140px;
+  line-height: 70px;
+  margin: auto;
   display: flex;
   align-items: center;
-  background: #fff;
-  padding: 20px 15px;
-  border-radius: 12px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  justify-content: space-between;
 }
-.nav-links li{
+ 
+.wrapper .logo img {
+  width: 100%;
+  max-width: 120px;  
+  height: auto;      
+  object-fit: contain; 
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.wrapper .nav-links {
+  display: inline-flex;
+  z-index: 10;
+}
+
+.nav-links li {
   list-style: none;
-  margin: 0 12px;
 }
-.nav-links li a{
-  position: relative;
-  color: #333;
-  font-size: 20px;
-  font-weight: 500;
-  padding: 6px 0;
+
+.nav-links li a {
+  color: #f2f2f2;
   text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 9px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
-.nav-links li a:before{
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 3px;
-  width: 0%;
-  background: #34efdf;
-  border-radius: 12px;
-  transition: all 0.4s ease;
+
+.nav-links li a:hover {
+  background: #00418b;
 }
-.nav-links li a:hover:before{
-  width: 100%;
-}
-.nav-links li.center a:before{
-  left: 50%;
-  transform: translateX(-50%);
-}
-.nav-links li.upward a:before{
-  width: 100%;
-  bottom: -5px;
-  opacity: 0;
-}
-.nav-links li.upward a:hover:before{
-  bottom: 0px;
-  opacity: 1;
-}
-.nav-links li.forward a:before{
-  width: 100%;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.4s ease;
-}
-.nav-links li.forward a:hover:before{
-  transform: scaleX(1);
-  transform-origin: left;
+
+.nav-links .mobile-item {
+  display: none;
 }
 </style>

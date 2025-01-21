@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "T-Shirt",
+    "detail": "Clothe Co. Mens Heavyweight Cotton T-Shirt Plain Tee",
+    "coverimage": "src/img/shirt.jpg",
+    "price": "$19.99"
+  },
+  {
+    "id": 2,
+    "name": "Pants",
+    "detail": "Womens Trouser Pants",
+    "coverimage": "src/img/pants.jpg",
+    "price": "$29.99"
+  },
+  {
+    "id": 3,
+    "name": "Shoes",
+    "detail": "Nike Dunk Low",
+    "coverimage": "src/img/shoes.jpg",
+    "price": "$129.99"
+  },
+  {
+    "id": 4,
+    "name": "Bag",
+    "detail": "Nike Heritage",
+    "coverimage": "src/img/bag.jpg",
+    "price": "$30.99"
+  },
+  {
+    "id": 5,
+    "name": "Watch",
+    "detail": "Apple Watch Series 10",
+    "coverimage": "src/img/watch.jpg",
+    "price": "$500.99"
+  },
+  {
+    "id": 6,
+    "name": "Cap",
+    "detail": "47 Brand New York Yankees Mens Cap Black",
+    "coverimage": "src/img/caps.jpg",
+    "price": "$40.25"
+  },
+  {
+    "id":7,
+    "name": "shirtdon",
+    "detail": "อุปกรณ์ฟอร์มช่าง",
+    "coverimage": "src/img/shirtdon.jpg",
+    "price": "$3.99"
+  },
+  {
+    "id":8,
+    "name": "helmet",
+    "detail": "หมวกกันน็อคฟอร์มช่าง",
+    "coverimage": "src/img/helmet.jpg",
+    "price": "$30.99"
+  },
+  {
+    "id":9,
+    "name": "hara",
+    "detail": "กางเกงยีนส์ สีมิดไนท์ ทรงกระบอกใหญ่",
+    "coverimage": "src/img/hara.jpg",
+    "price": "$20.99"
+  },
+  {
+    "id":0,
+    "name": "มีดหัวตัด",
+    "detail": "อุปกรณ์ฟอร์มช่าง",
+    "coverimage": "src/img/gg.jpg",
+    "price": "$6.99"
+  }
+
+ 
+]
